@@ -1,0 +1,47 @@
+.timezone-slider {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 10px;
+  margin: 10px 0;
+  background-color: #e2dfd0;
+  width: 90%;
+}
+
+.top {
+  display: flex;
+  justify-content: space-between;
+  font-weight: bold;
+}
+
+input[type="range"] {
+  width: 100%;
+  margin-top: 10px;
+}
+
+.time-display {
+  margin-top: 10px;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+/* Dark mode styles */
+.dark-mode .timezone-slider {
+  color: #000;
+}
+
+.dark-mode .time-display {
+  color: #000;
+}
+
+.timezone-slider button {
+  background-color: #f97300;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+.timezone-slider button:hover {
+  background-color: #ff3333;
+}

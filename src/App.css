@@ -1,0 +1,108 @@
+/* Main app styling */
+.app {
+  text-align: center;
+  width: 100vw;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Header and card styling */
+.app-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background-color: #282c34;
+  color: white;
+}
+
+.app-card {
+  border: #1e1e1e solid 1px;
+  border-radius: 0 0 30px 30px;
+  width: 80%;
+  padding-bottom: 20px;
+  margin: 80px;
+}
+
+/* Add region section */
+.add-region {
+  margin: 20px 0;
+}
+
+.add-region select,
+.add-region button,
+.app-header button {
+  padding: 10px;
+  font-size: 16px;
+  margin-right: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+.add-region button {
+  background-color: #61dafb;
+  cursor: pointer;
+}
+
+.add-region button:hover {
+  background-color: #21a1f1;
+}
+
+/* Dark mode styling */
+.dark-mode {
+  background-color: #1e1e1e;
+  color: #ffffff;
+}
+
+.dark-mode .app-header {
+  background-color: #333;
+}
+
+.dark-mode .app-card {
+  border-color: #ffffff;
+}
+
+/* Timezone controls and list */
+.timezone-controls {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  background-color: #ccc;
+}
+
+.timezone-controls button {
+  background-color: #ffffff;
+  padding: 10px;
+  font-size: 16px;
+  margin-right: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+.timezone-list {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .app-header {
+    font-size: 10px;
+    padding: 20px 10px;
+  }
+
+  .app-card {
+    width: 90%;
+    margin: 50px;
+  }
+
+  .timezone-controls {
+    flex-direction: column;
+    padding: 10px;
+  }
+}
